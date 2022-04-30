@@ -1,0 +1,41 @@
+.banner {
+    height: 100vh;
+    display: flex;
+}   
+
+.banner__info, .banner__image {
+    flex: 0 0 50%;
+}
+
+.banner__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banner__info__schedule {
+    font-size: $s-text + 1rem;
+    font-weight: $w-extra-light;
+    align-self: flex-start;
+}
+
+.banner__info__button {
+    align-self: flex-start;
+    border: 2px solid white;
+    border-radius: 3rem;
+    padding: 1.5rem 2.5rem;
+    transition: .3s ease-out;
+
+    &:hover {
+        background-color: white;
+        color: $c-orange;
+    }
+}
+
+.banner__image {
+    background-image: url("../../../public/assets/banner1.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

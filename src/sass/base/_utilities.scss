@@ -1,0 +1,115 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+}
+
+$weights: 200, 300, 400, 500, 600, 700;
+@each $weight in $weights {
+    .fw-#{$weight} {
+        font-weight: $weight;
+    }
+}
+
+// Padding.
+@for $i from 1 through 10 {
+    .p-#{$i} {
+        padding: #{$i}rem;
+    }
+}
+
+// Padding top.
+@for $i from 1 through 10 {
+    .pt-#{$i} {
+        padding-top: #{$i}rem;
+    }
+}
+
+// Padding right.
+@for $i from 1 through 10 {
+    .pr-#{$i} {
+        padding-right: #{$i}rem;
+    }
+}
+
+// Padding bottom.
+@for $i from 1 through 10 {
+    .pb-#{$i} {
+        padding-bottom: #{$i}rem;
+    }
+}
+
+// Padding left.
+@for $i from 1 through 10 {
+    .pl-#{$i} {
+        padding-left: #{$i}rem;
+    }
+}
+
+// Margin.
+@for $i from 1 through 10 {
+    .m-#{$i} {
+        margin: #{$i}rem;
+    }
+}
+
+// Margin top.
+@for $i from 1 through 10 {
+    .mt-#{$i} {
+        margin-top: #{$i}rem;
+    }
+}
+
+// Margin right.
+@for $i from 1 through 10 {
+    .mr-#{$i} {
+        margin-right: #{$i}rem;
+    }
+}
+
+// Margin bottom.
+@for $i from 1 through 10 {
+    .mb-#{$i} {
+        margin-bottom: #{$i}rem;
+    }
+}
+
+// Margin left.
+@for $i from 1 through 10 {
+    .ml-#{$i} {
+        margin-left: #{$i}rem;
+    }
+}
+
+$colors:
+    "white" #FFFFFF,
+    "black" #000000,
+    "gray" #E9EEF2,
+    "orange" #FB811E,
+    "green" #009F4D;
+
+@each $color, $hexa in $colors {
+    .color-#{$color} {
+        color: $hexa;
+    }
+}
+
+$bg-colors:
+"white" #E9EEF2,
+"black" #292929,
+"orange" #FB811E,
+"green" #009F4D;
+
+@each $color, $hexa in $bg-colors {
+    .bg-color-#{$color} {
+        background-color: $hexa;
+    }
+}
+
+
+
